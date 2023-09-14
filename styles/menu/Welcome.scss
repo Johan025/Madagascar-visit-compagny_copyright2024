@@ -1,0 +1,58 @@
+.welcome {
+
+    .carousel {
+         width: 100%;
+         height: 105vh;
+
+            img{
+                height: 105vh;
+                filter: brightness(80%);
+            }
+
+             #caption{
+                  position: relative;
+                  top: -70vh;
+                  left: 0;
+
+                    p{
+                        font-weight: 600;
+                        font-size: 19px;
+                        text-transform: capitalize;
+                        color: #fff;
+                        font-family: 'Coneria Script Demo', sans-serif;
+                        background: $color1;
+                        border-radius: 3px;
+                        position: relative;
+                        padding: 9px 32px;
+                        bottom: 2.2rem;
+                        left: 38%;
+                        padding-top: 0.7rem;
+                        width: 19rem;
+                        height: 3rem;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                        transform: translateY(50%);
+                        clip-path: polygon(9% 0,90% 3%,100% 94%,0 100%);
+                    }
+
+                    h1{
+                        font-size: 48px;
+                        font-family: 'Prompt', sans-serif;
+                        font-weight: bold;
+                        width: 55%;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                        text-align: center;
+                        margin-left: 23%;
+                    }
+
+                    button{
+                        padding: 8px;
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        font-weight: bold;
+                        color: #fff;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                        font-size: 20px;
+                    }
+             }
+    }
+}

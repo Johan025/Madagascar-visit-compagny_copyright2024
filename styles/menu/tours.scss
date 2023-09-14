@@ -1,0 +1,35 @@
+.tours{
+    position: relative;
+    top: 8.5rem;
+    width: 100%;
+
+    #row1 {
+
+        .title {
+
+            margin-top: 5rem;
+            filter: brightness(150%);
+
+            h2 {
+                font-size: 26.5px;
+                font-family: 'Coneria Script Demo', sans-serif;
+                font-weight: bold;
+                color: rgb(7, 75, 41);
+            }
+
+            h1 {
+                font-family: 'Prompt', sans-serif;
+                font-size: 45px;
+            }
+
+            .lig {
+                background-image: url(./assets/lig.png);
+                width: 27rem;
+                height: 0.43rem;
+                background-repeat: no-repeat;
+                margin-left: 43%;
+            }
+
+        }
+    }
+}

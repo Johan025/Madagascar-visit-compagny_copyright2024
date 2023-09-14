@@ -1,0 +1,87 @@
+nav {
+
+  height: 2.5rem;
+  width: 100%;
+  background-color: #c4a80a;
+}
+
+.navbar {
+  width: 100%;
+  height: 6rem;
+  position: fixed;
+  z-index: 55;
+  background-color: rgb(7, 75, 41);
+
+  .logo {
+    position: relative;
+    top: 0.3rem;
+
+    &_img {
+      width: 4.4rem;
+      height: 4.4rem;
+      margin-left: -0.5rem;
+    }
+
+    h1 {
+      font-size: calc(1.2rem + 1vw);
+      font-family: 'Coneria Script Demo', sans-serif;
+      color: #fff;
+      font-weight: 900;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      margin-left: 2rem;
+
+      span {
+        color: $color1;
+        font-family: 'Coneria Script Demo', sans-serif;
+      }
+    }
+
+  }
+
+  &_toggle {
+
+    ul {
+      display: flex;
+      gap: 25px;
+      margin-top: 0.3rem;
+      justify-content: space-between;
+      position: fixed;
+      right: 15%;
+      top: 1.7rem;
+
+
+      a {
+        text-transform: capitalize;
+        text-decoration: none;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+        li {
+          font-size: 20px;
+          color: #fff;
+
+          &:hover {
+            color: #c4a80a;
+          }
+
+
+        }
+
+        .active {
+          color: #c4a80a;
+        }
+      }
+    }
+
+  }
+
+  .version {
+    position: relative;
+    right: 5%;
+    top: 0.2rem;
+
+    h1 {
+      font-size: 20px;
+      color: #fff;
+    }
+  }
+}

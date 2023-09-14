@@ -1,0 +1,32 @@
+$small-screen: 480px;
+$medium-screen: 768px;
+$desktop-screen: 1024px;
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint ==small {
+    @media screen and (max-width: $small-screen) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint ==medium {
+    @media screen and (max-width: $medium-screen) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint ==desktop {
+    @media screen and (max-width: $desktop-screen) {
+      @content;
+    }
+  }
+}
+
+;
+$color1:#c4a80a;
+
+* {
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+}

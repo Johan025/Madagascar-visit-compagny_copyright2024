@@ -1,0 +1,358 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+}
+
+nav {
+  height: 2.5rem;
+  width: 100%;
+  background-color: #c4a80a;
+}
+
+.navbar {
+  width: 100%;
+  height: 6rem;
+  position: fixed;
+  z-index: 55;
+  background-color: rgb(7, 75, 41);
+}
+.navbar .logo {
+  position: relative;
+  top: 0.3rem;
+}
+.navbar .logo_img {
+  width: 4.4rem;
+  height: 4.4rem;
+  margin-left: -0.5rem;
+}
+.navbar .logo h1 {
+  font-size: calc(1.2rem + 1vw);
+  font-family: "Coneria Script Demo", sans-serif;
+  color: #fff;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-left: 2rem;
+}
+.navbar .logo h1 span {
+  color: #c4a80a;
+  font-family: "Coneria Script Demo", sans-serif;
+}
+.navbar_toggle ul {
+  display: flex;
+  gap: 25px;
+  margin-top: 0.3rem;
+  justify-content: space-between;
+  position: fixed;
+  right: 15%;
+  top: 1.7rem;
+}
+.navbar_toggle ul a {
+  text-transform: capitalize;
+  text-decoration: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.navbar_toggle ul a li {
+  font-size: 20px;
+  color: #fff;
+}
+.navbar_toggle ul a li:hover {
+  color: #c4a80a;
+}
+.navbar_toggle ul a .active {
+  color: #c4a80a;
+}
+.navbar .version {
+  position: relative;
+  right: 5%;
+  top: 0.2rem;
+}
+.navbar .version h1 {
+  font-size: 20px;
+  color: #fff;
+}
+
+.welcome .carousel {
+  width: 100%;
+  height: 105vh;
+}
+.welcome .carousel img {
+  height: 105vh;
+  filter: brightness(80%);
+}
+.welcome .carousel #caption {
+  position: relative;
+  top: -70vh;
+  left: 0;
+}
+.welcome .carousel #caption p {
+  font-weight: 600;
+  font-size: 19px;
+  text-transform: capitalize;
+  color: #fff;
+  font-family: "Coneria Script Demo", sans-serif;
+  background: #c4a80a;
+  border-radius: 3px;
+  position: relative;
+  padding: 9px 32px;
+  bottom: 2.2rem;
+  left: 38%;
+  padding-top: 0.7rem;
+  width: 19rem;
+  height: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transform: translateY(50%);
+  clip-path: polygon(9% 0, 90% 3%, 100% 94%, 0 100%);
+}
+.welcome .carousel #caption h1 {
+  font-size: 48px;
+  font-family: "Prompt", sans-serif;
+  font-weight: bold;
+  width: 55%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-left: 23%;
+}
+.welcome .carousel #caption button {
+  padding: 8px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+}
+
+.about {
+  position: relative;
+  top: 0rem;
+  width: 100%;
+  height: 44rem;
+  background-color: #ffffff;
+}
+.about .row {
+  position: relative;
+  top: 5rem;
+}
+.about .row .about_images {
+  margin-top: 5rem;
+}
+.about .row .about_images img {
+  border-radius: 13px;
+  width: 124%;
+  height: 26rem;
+}
+.about .row .contents {
+  position: relative;
+  left: 20%;
+}
+.about .row .contents .maintitle h2 {
+  font-size: 26.5px;
+  font-weight: bold;
+  color: rgb(7, 75, 41);
+  font-family: "Coneria Script Demo", sans-serif;
+}
+.about .row .contents .maintitle h1 {
+  font-family: "Prompt", sans-serif;
+  font-size: 43px;
+}
+.about .row .contents .maintitle .lig {
+  background-image: url(./assets/lig.png);
+  width: 27rem;
+  height: 0.43rem;
+  background-repeat: no-repeat;
+}
+.about_text {
+  margin-top: 1.7rem;
+}
+.about_text p {
+  font-size: 19px;
+  color: #2c2929;
+}
+
+.choice {
+  position: relative;
+  top: 2rem;
+}
+.choice #row1 .title h2 {
+  font-size: 26.5px;
+  font-weight: bold;
+  font-family: "Coneria Script Demo", sans-serif;
+  color: rgb(7, 75, 41);
+}
+.choice #row1 .title h1 {
+  font-family: "Prompt", sans-serif;
+  font-size: 45px;
+}
+.choice #row1 .title .lig {
+  background-image: url(./assets/lig.png);
+  width: 27rem;
+  height: 0.43rem;
+  background-repeat: no-repeat;
+  margin-left: 43%;
+}
+.choice #row2 {
+  margin-top: 4rem;
+  left: 4%;
+  position: relative;
+}
+.choice #row2 .box {
+  border-radius: 20px;
+  margin-left: 0%;
+  width: 100%;
+}
+.choice #row2 .box img {
+  height: 14.4rem;
+  object-fit: cover;
+  border-radius: 50%;
+  width: 80%;
+  position: relative;
+  left: 8%;
+}
+.choice #row2 .box .box_body {
+  background-color: rgb(255, 255, 255);
+  margin-top: 3rem;
+  margin-bottom: 0rem;
+  margin-right: 2rem;
+}
+.choice #row2 .box .box_body h5 {
+  font-size: 27.4px;
+  font-family: "exo 2";
+  font-style: italic;
+}
+.choice #row2 .box .box_body .lig {
+  background-image: url(./assets/lig.png);
+  width: 27rem;
+  height: 0.43rem;
+  background-repeat: no-repeat;
+  margin-left: -83%;
+  transform: rotate(-180deg);
+}
+.choice #row2 .box .box_body p {
+  font-size: 19px;
+  font-weight: bold;
+  color: #2c2929;
+}
+
+.travel {
+  position: relative;
+  top: 7rem;
+  width: 100%;
+  height: 44rem;
+  background-color: #eeeeee;
+  background-size: cover;
+}
+.travel #row1 .title {
+  margin-top: 5rem;
+  filter: brightness(150%);
+}
+.travel #row1 .title h2 {
+  font-size: 26.5px;
+  font-family: "Coneria Script Demo", sans-serif;
+  font-weight: bold;
+  color: rgb(7, 75, 41);
+}
+.travel #row1 .title h1 {
+  font-family: "Prompt", sans-serif;
+  font-size: 45px;
+}
+.travel #row1 .title .lig {
+  background-image: url(./assets/lig.png);
+  width: 27rem;
+  height: 0.43rem;
+  background-repeat: no-repeat;
+  margin-left: 43%;
+}
+.travel #row2 {
+  margin-top: 4rem;
+  margin-left: -2%;
+}
+.travel #row2 .box {
+  width: 90%;
+  height: 22rem;
+  margin-left: 8%;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 11px rgba(36, 35, 35, 0.61);
+}
+.travel #row2 .box_image {
+  top: -2rem;
+  position: relative;
+}
+.travel #row2 .box_image img {
+  width: 150%;
+  height: 24rem;
+  border-radius: 12px;
+}
+.travel #row2 .box_content {
+  background-color: rgba(255, 255, 255, 0.9098039216);
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  top: -7.2rem;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  height: 14rem;
+  transition: 0.6s;
+}
+.travel #row2 .box_content .td {
+  top: 1.6rem;
+  position: relative;
+}
+.travel #row2 .box_content .td h1 {
+  font-size: 26px;
+  top: 2rem;
+  color: #c4a80a;
+  font-weight: bold;
+  font-family: "Prompt", sans-serif;
+}
+.travel #row2 .box_content .td .border1 {
+  width: 30%;
+  margin-left: 33%;
+  height: 4.5px;
+  background-color: #c4a80a;
+  border: 0 solid #c4a80a;
+  border-radius: 20px;
+}
+.travel #row2 .box_content .td p {
+  font-size: 19.5px;
+  margin-top: 0.9rem;
+}
+.travel #row2 .box_content .td button {
+  font-size: 15px;
+  color: #fff;
+}
+.travel #row2 .box .open {
+  position: relative;
+  transition: 0.6s;
+  top: -15.3rem;
+}
+
+.tours {
+  position: relative;
+  top: 8.5rem;
+  width: 100%;
+}
+.tours #row1 .title {
+  margin-top: 5rem;
+  filter: brightness(150%);
+}
+.tours #row1 .title h2 {
+  font-size: 26.5px;
+  font-family: "Coneria Script Demo", sans-serif;
+  font-weight: bold;
+  color: rgb(7, 75, 41);
+}
+.tours #row1 .title h1 {
+  font-family: "Prompt", sans-serif;
+  font-size: 45px;
+}
+.tours #row1 .title .lig {
+  background-image: url(./assets/lig.png);
+  width: 27rem;
+  height: 0.43rem;
+  background-repeat: no-repeat;
+  margin-left: 43%;
+}
+
+/*# sourceMappingURL=styles.css.map */

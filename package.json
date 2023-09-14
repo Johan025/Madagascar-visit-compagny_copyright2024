@@ -1,0 +1,15 @@
+{
+  "name": "madagascar_visit_compagny",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass -w styles.scss styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0",
+    "sass": "^1.66.1"
+  }
+}
