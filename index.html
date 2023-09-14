@@ -277,7 +277,7 @@
       </div>
 
       <div class="tours">
-              <div class="container">
+            <div class="container">
                   <div class="row" id="row1">
                         <div class="col-12">
                               <div class="title text-center">
@@ -288,7 +288,46 @@
                         </div>
 
                   </div>
-              </div>
+
+                  <div class="row gx-0 text-center" id="row2">
+                        <div class="col-4 text-start">
+                              <div class="card" style="width: 18rem;">
+                                    <img src="./assets/alley.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                          <h5 class="card-title"><i class="fa-solid fa-location-dot"></i> Weast</h5>
+                                          <div class="lig"></div>
+                                          <p class="card-text">Discover the Weast of Madagascar</p>
+                                          <a href="#" class="btn">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="col-4">
+                              <div class="card text-start" style="width: 18rem;">
+                                    <img src="./assets/baleine.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                          <h5 class="card-title"><i class="fa-solid fa-location-dot"></i> East</h5>
+                                          <div class="lig"></div>
+                                          <p class="card-text">Trip to the East Part of Madagascar</p>
+                                          <a href="#" class="btn">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="col-4 text-start">
+                              <div class="card" style="width: 18rem;">
+                                    <img src="./assets/alley.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                          <h5 class="card-title"><i class="fa-solid fa-location-dot"></i> East</h5>
+                                          <div class="lig"></div>
+                                          <p class="card-text">Trip to the East Part of Madagascar</p>
+                                          <a href="#" class="btn">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+            </div>
       </div>
 
 
@@ -312,6 +351,45 @@
                   });
 
             })
+
+            function ratio1() {
+
+                  const ratio = .58;
+
+                  const options = {
+                        root: null,
+                        rootMargin: '0px',
+                        threshold: ratio,
+                  }
+
+
+
+                  const handleIntersect = function (entries, observer) {
+
+                        entries.forEach(function (entry) {
+
+                              if (entry.intersectionRatio > ratio) {
+                                    entry.target.classList.add('show_');
+                                    alert(entry.intersectionRatio);
+
+                              }
+
+                              else if (entry.intersectionRatio < ratio) {
+                                    entry.target.classList.remove('show_')
+
+                              }
+
+
+                        })
+                  }
+                  const observer = new IntersectionObserver(handleIntersect, options)
+                  document.querySelectorAll('.hide_').forEach(function (h) {
+                        observer.observe(h);
+                  })
+            }
+            ratio1();
+
+
 
       </script>
 </body>

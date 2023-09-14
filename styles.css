@@ -354,5 +354,44 @@ nav {
   background-repeat: no-repeat;
   margin-left: 43%;
 }
+.tours #row2 {
+  position: relative;
+  top: 6rem;
+  left: 4%;
+}
+.tours #row2 .card {
+  width: 100%;
+  border-radius: 17px;
+  height: 27rem;
+  margin-left: 0%;
+}
+.tours #row2 .card img {
+  height: 14rem;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+}
+.tours #row2 .card .card-title {
+  font-size: calc(0.7rem + 1.2vw);
+  font-weight: bold;
+  color: #c4a80a;
+}
+.tours #row2 .card .card-text {
+  font-size: 20px;
+  margin-top: 0.8rem;
+}
+.tours #row2 .card .lig {
+  width: 60%;
+  margin-left: 1%;
+  height: 4.5px;
+  background-color: #c4a80a;
+  border: 0 solid #c4a80a;
+  border-radius: 20px;
+}
+.tours #row2 .card a {
+  border: 1px solid #c4a80a;
+  border-radius: 20px;
+  color: #c4a80a;
+  font-weight: bold;
+}
 
 /*# sourceMappingURL=styles.css.map */
