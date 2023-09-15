@@ -133,7 +133,7 @@ nav {
 }
 @media screen and (max-width: 480px) {
   .welcome .carousel #caption {
-    top: -48.5vh;
+    top: -19rem;
   }
 }
 .welcome .carousel #caption p {
@@ -337,7 +337,7 @@ body {
 }
 @media screen and (max-width: 480px) {
   .choice #row2 .box {
-    margin-left: 15%;
+    margin-left: 11.8%;
   }
 }
 .choice #row2 .box img {
