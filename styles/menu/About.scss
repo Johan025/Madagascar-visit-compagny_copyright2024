@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 .about {
     position: relative;
     top: 0rem;
@@ -10,36 +14,64 @@
         position: relative;
         top: 5rem;
 
+          
+        @include responsive(small) {
+            top: 0rem;
+           }
+        
+
         .about_images {
 
             margin-top: 5rem;
-        
-
+  
 
             img {
                 border-radius: 13px;
                 width: 124%;
                 height: 26rem;
+
+                @include responsive(small) {
+                    width: 100%;
+                    height: 18rem;
+                   }
             }
         }
 
         .contents{
                position: relative;
                left: 20%;
+               top: 2rem;
+               overflow-x: hidden;
+
+               @include responsive(small) {
+                left: 2%;
+               }
+               
 
                  .maintitle{
+                    
+
                        h2{
                         font-size: 26.5px;
                         font-weight: bold;
+                        margin-top: 0.5rem;
                         color: rgb(7, 75, 41);
                         font-family: 'Coneria Script Demo', sans-serif;
                         // font-family: 'Coneria Script Slanted Demo', sans-serif;
+
+                        @include responsive(small) {
+                            font-size: 21px;
+                           }
     
                        }
 
                        h1{
                         font-family: 'Prompt', sans-serif;
                         font-size: 43px;
+
+                        @include responsive(small) {
+                            font-size: 29px;
+                           }
                        }
 
                        .lig{

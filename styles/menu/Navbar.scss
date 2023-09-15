@@ -16,10 +16,20 @@ nav {
     position: relative;
     top: 0.3rem;
 
+    @include responsive(small) {
+       left: -1rem;
+    }
+
     &_img {
       width: 4.4rem;
       height: 4.4rem;
       margin-left: -0.5rem;
+
+
+      @include responsive(small) {
+        width: 3.4rem;
+        height: 3.4rem;
+      }
     }
 
     h1 {
@@ -29,6 +39,11 @@ nav {
       font-weight: 900;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       margin-left: 2rem;
+
+      @include responsive(small) {
+        margin-top: 0.3rem;
+        font-size: calc(1.2rem + 0.7vw);
+     }
 
       span {
         color: $color1;
@@ -40,6 +55,10 @@ nav {
 
   &_toggle {
 
+    @include responsive(small) {
+      background-color: aqua;
+    }
+
     ul {
       display: flex;
       gap: 25px;
@@ -48,6 +67,11 @@ nav {
       position: fixed;
       right: 15%;
       top: 1.7rem;
+
+      @include responsive(small) {
+        display: none;
+      }
+
 
 
       a {
@@ -78,6 +102,10 @@ nav {
     position: relative;
     right: 5%;
     top: 0.2rem;
+
+    @include responsive(small) {
+     display: none;
+    }
 
     h1 {
       font-size: 20px;

@@ -1,7 +1,16 @@
-.tours{
+.tours {
     position: relative;
     top: 8.5rem;
+    height: 46rem;
     width: 100%;
+    overflow: hidden;
+
+
+    @include responsive(small) {
+          top: 48rem;
+          position: relative;
+          height: 176rem;
+       }
 
     #row1 {
 
@@ -15,11 +24,19 @@
                 font-family: 'Coneria Script Demo', sans-serif;
                 font-weight: bold;
                 color: rgb(7, 75, 41);
+
+                @include responsive(small) {
+                   font-size: 21px;
+                 }
             }
 
             h1 {
                 font-family: 'Prompt', sans-serif;
                 font-size: 45px;
+
+                @include responsive(small) {
+                    font-size: 39px;
+                 }
             }
 
             .lig {
@@ -28,43 +45,59 @@
                 height: 0.43rem;
                 background-repeat: no-repeat;
                 margin-left: 43%;
+
+                @include responsive(small) {
+                    margin-left: 2%;
+                 }
             }
 
         }
     }
 
-    #row2{
+    #row2 {
         position: relative;
-        top: 6rem;
-        left: 4%;
+        top: 3.7rem;
+        left: 0%;
+        width: 100%;
 
-           .card{
-            width: 100%;
+        .card {
             border-radius: 17px;
-            height: 27rem;
-            margin-left: 0%;
+            padding-bottom: 1rem;
+            margin-left: 8%;
 
-            img{
+            @include responsive(small) {
+                margin-left: 3%;
+             }
+
+            img {
                 height: 14rem;
                 border-top-left-radius: 17px;
                 border-top-right-radius: 17px;
             }
 
-                 .card-title{
-                   font-size: calc(0.7rem + 1.2vw);
-                   font-weight: bold;
-                   color: $color1;
-                    
-                 }
+            .card-body {
+                padding: 12px;
 
-                   
-                 .card-text{
+                .card-title {
+                    font-size: calc(0.7rem + 1.2vw);
+                    font-weight: bold;
+                    color: $color1;
+
+                    @include responsive(small) {
+                        font-size: calc(1.55rem + 1.2vw);
+                     }
+
+                }
+
+
+                .card-text {
                     font-size: 20px;
+                    font-weight: 800;
                     margin-top: 0.8rem;
                 }
 
-                .lig{
-                    width: 60%;
+                .lig {
+                    width: 64%;
                     margin-left: 1%;
                     height: 4.5px;
                     background-color: $color1;
@@ -72,12 +105,19 @@
                     border-radius: 20px;
                 }
 
-                a{
-                    border:  1px solid $color1;
+                a {
+                    border: 1px solid $color1;
                     border-radius: 20px;
                     color: $color1;
                     font-weight: bold;
+                    font-size: 20px;
+
+                       &:hover{
+                        background-color: $color1;
+                        color: white;
+                       }
                 }
-           }
+            }
+        }
     }
 }

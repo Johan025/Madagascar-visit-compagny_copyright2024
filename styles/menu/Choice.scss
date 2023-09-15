@@ -1,8 +1,13 @@
 .choice {
     position: relative;
     top: 2rem;
-    
+    overflow-x: hidden;
 
+
+    @include responsive(small) {
+          top: 44rem;
+       }
+    
     #row1 {
 
         .title {
@@ -10,13 +15,22 @@
             h2 {
                 font-size: 26.5px;
                 font-weight: bold;
+                margin-top: 0.5rem;
                 font-family: 'Coneria Script Demo', sans-serif;
                 color: rgb(7, 75, 41);
+
+                @include responsive(small) {
+                     font-size: 21px;
+                }
             }
 
             h1 {
                 font-family: 'Prompt', sans-serif;
                 font-size: 45px;
+
+                @include responsive(small) {
+                    font-size: 28.5px;
+                }
             }
 
             .lig {
@@ -25,6 +39,10 @@
                 height: 0.43rem;
                 background-repeat: no-repeat;
                 margin-left: 43%;
+                  
+                @include responsive(small) {
+                      margin-left: 2%;
+                }
             }
 
         }
@@ -35,10 +53,19 @@
         left: 4%;
         position: relative;
 
+        @include responsive(small) {
+            margin-top: 2rem;
+            left: 0%;
+        }
+
           .box{
              border-radius: 20px;
-             margin-left: 0%;
+             margin-left: -1%;
              width: 100%;
+
+             @include responsive(small) {
+                margin-left: 15%;
+            }
 
                img{
                 height: 14.4rem;
@@ -46,7 +73,7 @@
                 border-radius: 50%;
                 width: 80%;
                 position: relative;
-                left: 8%;
+                left: -4%;
 
                }
 
